@@ -1,0 +1,102 @@
+.btn-main {
+  font-size: 20px;
+  color: white;
+  background: rgb(0, 109, 0);
+  padding: 18px 20px;
+  border-radius: 10px;
+  border: unset;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.heading {
+  text-align: center;
+  border-bottom: 2px solid grey;
+}
+
+.content {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.otp-inputs input {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  text-align: center;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.otp-inputs input:focus {
+  border-color: #0066cc;
+}
+
+.btn-divder {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin: -10px 0;
+  color: #0066cc;
+}
+
+.btn {
+  font-size: 16px;
+  color: white;
+  background: rgb(56, 185, 56);
+  padding: 12px 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: unset;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  background-color: lightgrey;
+  color: white;
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 600px) {
+  .popup-content {
+    width: 350px;
+  }
+  .otp-inputs input {
+    width: 30px;
+    height: 30px;
+  }
+}
